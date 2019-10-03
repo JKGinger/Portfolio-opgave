@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid_container {
+    background-color: #ddd;
+    display: grid;
+    /* antal kolonner og deres bredde */
+    /*grid-template-columns: repeat(4, 1fr);*/
+    /* antal rækker og deres højde*/
+    /*grid-template-rows:1fr 1fr 1fr 1fr 1fr;*/
+    
+    /* her der tegner man siden op*/
+    grid-template-areas: 
+        "logo   nav    nav     nav"
+        "info   info   banner1 banner1"
+        "info   info   banner2 banner2"
+        "footer footer footer  footer";
+    grid-gap: .5em;
+    padding: .5em;
+}
+
+.grid_item {
+    background-color: #55abff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
+    color: white;
+    text-align: center;
+    /*margin: 10px;*/
+    padding: 10px;
+    
+}
+/* grid-column bruges til at strække kassen fra linje x til linje y */
+.one {
+    grid-area: logo;
+}
+
+.tow {
+    /*grid-column: 2/5*/
+    grid-area: nav;
+}
+
+.tree {
+    /*grid-column: 1/3;
+    grid-row: 2/4;*/
+    grid-area: info;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tree div {
+    color: black;
+    background-color: antiquewhite;
+    width: 2em;
+    margin: .1em;
+}
+
+
+.four {
+   /* grid-column: 3/5;
+    grid-row: 2/3;*/
+    grid-area: banner1;
+}
+
+.five {
+   /* grid-column: 3/5; */
+    grid-area: banner2;
+}
+
+.six {
+    /*grid-column: span 4;*/
+    grid-area: footer;
+}
+

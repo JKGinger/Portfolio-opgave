@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test til css</title>
+        <!--brug en font som du ikke har. Google font links-->
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+        
+        <!--"Internt style sheet" -->
+        <style>
+            /*Dette er en kommentar i css sproget.
+            Css deles op i 3 dele: selector {property: value;}*/
+            h1{
+                /* for at finde farvekoder, tryk på ctrl+e på farven*/
+                color:blue;
+                background-color: rgb(255,200,15);
+                font-family: arial, verdana, sans-serif;
+                font-size: 60px;
+                font-style: italic;
+                text-align: center;
+                text-decoration: overline;
+                letter-spacing: 30px;
+                text-transform: uppercase;
+                /*margin: 50px;*/
+                margin-left: 10px;
+                margin-right: 50px;
+                margin-top: 25px;
+                margin-bottom: 56px;
+                /* overstående er det samme som margin: 25px 50px 56px 10px; den går fra toppen og går uret rundt*/
+                padding: 20px;
+                border: 15px dashed;
+                width: 525;
+            }
+            h1:hover{
+                font-size: 30px;
+                color:blue;
+            }
+            
+            body{
+                background-color: #ff0000;/* hex farvekode*/
+                background-image: url(Billeder/collage-katte-stock-foto_csp20185220.jpg);
+                background-repeat:no-repeat;
+                /*background-position: center center;
+                background-attachment: fixed;*/
+                background-size: cover;
+            }
+            
+           
+            p{
+                font-family: 'dancing script',sans-serif;
+                font-size: 25px;
+                font-weight:bold;
+                text-align: justify;
+                line-height: 160%;
+                background-image: url(Billeder/collage-katte-stock-foto_csp20185220.jpg);
+                color:red;
+            }
+            
+            p:hover{
+                font-size: 1px;
+            }
+            
+            a{
+                color:#ff00ce;
+                font-family: 'dancing script';
+                font-size: 30px
+            }
+            /* Dette er link som man ikke har besøgt før */
+            a:link {
+                color:green;
+                border: 10px dashed;
+            }
+            /* Dette er link som man har besøgt før */
+            a:visited {
+                color: darkcyan;
+                
+            }
+            /* Dette er når man hover over linket*/
+            a:hover {
+                color: black;
+                font-family: Arial;
+                text-decoration: line-through
+            }
+            /* Dette er når clikker ned på linket*/
+            a:active {
+                color:yellowgreen;
+                font-weight: bold;
+                text-decoration: overline;
+                font-size: 50px;
+            }
+            
+            body:hover{
+                background-size: 2%
+            }
+        </style>
+    
+    </head> 
+    
+    <body>
+       
+       <!-- når CSS skives inde i et tag som en attribut, kaldes det for "inline style" -->
+        <h1 style="color: purple;">How to not Style med CSS og html</h1>
+        <p style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam vel quod aliquam illum quas, aspernatur, quibusdam eos impedit et quis dignissimos excepturi! Temporibus consequuntur veniam expedita, vero, labore ipsam. Reprehenderit iste, deserunt officia esse voluptatum, neque sint assumenda quidem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam vel quod aliquam illum quas, aspernatur, quibusdam eos impedit et quis dignissimos excepturi! Temporibus consequuntur veniam expedita, vero, labore ipsam. Reprehenderit iste, deserunt officia esse voluptatum, neque sint assumenda quidem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam vel quod aliquam illum quas, aspernatur, quibusdam eos impedit et quis dignissimos excepturi! Temporibus consequuntur veniam expedita, vero, labore ipsam. Reprehenderit iste, deserunt officia esse voluptatum, neque sint assumenda quidem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam vel quod aliquam illum quas, aspernatur, quibusdam eos impedit et quis dignissimos excepturi! Temporibus consequuntur veniam expedita, vero, labore ipsam. Reprehenderit iste, deserunt officia esse voluptatum, neque sint assumenda quidem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam vel quod aliquam illum quas, aspernatur, quibusdam eos impedit et quis dignissimos excepturi! Temporibus consequuntur veniam expedita, vero, labore ipsam. Reprehenderit iste, deserunt officia esse voluptatum, neque sint assumenda quidem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam vel quod aliquam illum quas, aspernatur, quibusdam eos impedit et quis dignissimos excepturi! Temporibus consequuntur veniam expedita, vero, labore ipsam. Reprehenderit iste, deserunt officia esse voluptatum, neque sint assumenda quidem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam vel quod aliquam illum quas, aspernatur, quibusdam eos impedit et quis dignissimos excepturi! Temporibus consequuntur veniam expedita, vero, labore ipsam. Reprehenderit iste, deserunt officia esse voluptatum, neque sint assumenda quidem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam vel quod aliquam illum quas, aspernatur, quibusdam eos impedit et quis dignissimos excepturi! Temporibus consequuntur veniam expedita, vero, labore ipsam. Reprehenderit iste, deserunt officia esse voluptatum, neque sint assumenda quidem.</p>
+        <h1>Boombaja</h1>
+        <a href="https://www.canstockphoto.dk/collage-katte-20185220.html" target="_blank"> Dette er et link</a>
+        <br>
+        <a href="http://www.mtrasmussen.dk" target="_blank"> Det andet lint</a>
+    </body>
+</html>

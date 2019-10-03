@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8">
+        <title>Min Formular Samling</title>
+        <meta description="Her vil man skive det som google skal vise når man bliver vist på en søgning">
+    </head>
+    
+    <body>
+        <h1>Min formular</h1>
+        <!-- når brugeren trykker på send aktiveres filen "send-afsted.php(action filen)" den vil sende data afsted -->
+        <form action="send-afsted.php">
+            
+            <!-- formular med én linje -->
+            <p>Fornavn</p>
+            <input type="text" name="fornavn" required placeholder="Fornavn.." autocomplete="on" autofocus>
+            <p>Efternavn</p>
+            <input type="text" name="efternavn" required placeholder="Efternavn.." autocomplete="on">
+            <p>E-mail</p>
+            <input type="email" name="email" placeholder="E-mail" autocomplete="off">
+            
+            
+            <!-- dette er en radioknap -->
+            <p>Vælg køn</p>
+            Mand <input type="radio" required name="gender" value="kvinde">
+            <br>
+            Kvinde <input type="radio" required name="gender" value="mand">
+            
+            <!-- Checkbokse -->
+            <p>Hvilket social medier bruger du</p>
+            <input Type="checkbox" name="SoMe" value="facebook">Facebook
+            <br>
+            <input Type="checkbox" name="SoMe" value="twitter">Twitter
+            <br>
+            <input Type="checkbox" name="SoMe" value="instagram">Instagram
+            <br>
+            <input Type="checkbox" name="SoMe" value="myspace">Myspace
+            
+            <!-- select box / dropdown menu -->
+            <p>Din køretøj</p>
+            <select name="transportation" required>
+                <option>Gå ben</option>
+                <option>El-løbehjul</option>
+                <option>Cykel</option>
+                <option>Bil</option>
+            </select>
+            
+            
+            <!-- formular med flere injer -->
+            <p>Kommentar</p>
+            <textarea name="kommentar" cols="30" rows="6"></textarea>
+            
+            <!-- slicder til at rate ting-->
+            <p>Hvad synes du om maden i kantinen</p>
+            Dårlig <input type="range" min="0" max="100" name="kantinen_rate"> Fantastisk
+            
+            <!-- En knap -->
+            <br><br>
+            <input type="submit" value="Send svar">
+            
+        </form>
+        
+         <!-- iframe ad/video/billeder fra andre sider -->
+            <iframe src="http://cphbusiness.dk" width="800" height="500">
+                
+            </iframe>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 60px;
+}
+
+/*Knapper*/
+.knapper {
+    display: flex;
+    justify-content: center;
+}
+
+.knapper nav {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.knapper nav a {
+    text-decoration: none;
+    font-family: helvetica, sans-serif;
+    font-weight: 700;
+    border: 1px solid darkorange;
+    /*afrundet hjørner på border eller kassen texten er i*/
+    border-radius: 40px;
+    /*mellemrummet mellem text og border*/
+    padding: 15px 25px;
+    background-image: linear-gradient(orange, #ff8000);
+    color: #603000;
+    /*dette gør texten til blok elimenter*/
+    width: 60px;
+    text-align: center;
+}
+
+/*dropdown menu*/
+.drop-down nav {
+    display: flex;
+}
+
+.drop-down li {
+    display: inline;
+}
+
+.fald-ned {
+    display: none;
+    position: absolute;
+}
+
+.drop-down li:hover .fald-ned {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Cards*/
+
+.image-links {
+    display: flex;
+    justify-content: center;
+}
+.image-links img {
+    width: 320px;   
+}
+
+.billed1 {
+    position: relative;
+    display: flex;
+    margin: 0.7em;
+}
+
+.info-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    color:white;
+    font-size: 2em;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.billed1:hover .info-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
